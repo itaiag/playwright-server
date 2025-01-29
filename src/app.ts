@@ -1,7 +1,7 @@
 import express from 'express';
 import { gitPullHandler } from './githandler'
-import { runTests, listTests } from './playwrightApi';
-import { getRunStatus, getRunReport } from './statusStore';
+import { runTests, listTests, getRunReport } from './playwrightApi';
+import { getRunStatus } from './statusStore';
 import { configureEnv } from './config';
 import { logger } from './logger';
 
