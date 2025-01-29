@@ -17,11 +17,4 @@ export interface RunStatus {
     return runs.get(runId) || { error: 'Run not found' };
   }
   
-  export function getRunReport(runId: string) {
-    logger.debug(`Getting run ${runId} report`);
-    try {
-      return require(`../reports/${runId}/report.json`);
-    } catch {
-      return null;
-    }
-  }
+  
