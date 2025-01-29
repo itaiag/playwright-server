@@ -1,0 +1,15 @@
+meta {
+  name: Get status
+  type: http
+  seq: 5
+}
+
+get {
+  url: {{base_url}}//tests/run/:runId/report
+  body: none
+  auth: none
+}
+
+params:path {
+  runId: 12bd10b1-d907-4091-b6b7-3b02ceabf014
+}

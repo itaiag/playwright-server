@@ -1,0 +1,17 @@
+meta {
+  name: List Tests
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{base_url}}/tests/list
+  body: json
+  auth: none
+}
+
+body:json {
+  {  
+    "testName": "should allow me to add todo items"
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: Run tests
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{base_url}}/tests/run
+  body: json
+  auth: none
+}
+
+body:json {
+  {  
+    "testName": "should allow me to add todo items"
+  }
+}
